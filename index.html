@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Портфоліо Іваненка Івана</title>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+<header>
+    <button class="burger" id="burger">&#9776;</button>
+
+    <div class="logo">Рак Дмитро</div>
+
+    <nav class="desktop-nav">
+        <ul>
+            <li><a href="#hero">Головна</a></li>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#projects">Проєкти</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <button id="theme-toggle">🌓</button>
+</header>
+
+<aside id="sidebar" class="sidebar">
+    <nav>
+        <ul>
+            <li><a href="#hero">Головна</a></li>
+            <li><a href="#about">Про мене</a></li>
+            <li><a href="#projects">Проєкти</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<div id="overlay" class="overlay"></div>
+
+<section id="hero" class="hero fade-in">
+    <div class="hero-text">
+        <h1>Ласкаво просимо на сайт Іваненка Івана!</h1>
+        <p>Я створюю креативні вебрішення</p>
+        <a href="#about" class="btn">Дізнатися більше</a>
+    </div>
+    <div class="hero-image">
+        <img src="img/hero.svg" alt="Hero Image">
+    </div>
+</section>
+
+<section id="about" class="fade-in">
+    <h2>Про мене</h2>
+    <div class="about-content">
+        <img src="img/avatar.jpg" alt="Аватар" class="avatar">
+        <div class="about-text">
+            <p>Привіт! Мене звати Іваненко Іван. Я — веброзробник із досвідом створення адаптивних, кросбраузерних
+                вебрішень. Моя мета — створювати сучасні сайти, які працюють швидко, виглядають стильно й приносять
+                користь.</p>
+            <p>Я працюю з HTML, CSS, JavaScript, а також маю досвід з фреймворками, такими як React та Vue. Постійно
+                вдосконалюю свої навички та слідкую за трендами у веброзробці.</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section fade-in">
+    <h2>Мої проєкти</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="img/project1.jpg" alt="Проєкт 1">
+            <div class="overlay">
+                <h3>Портфоліо веброзробника</h3>
+                <p>Односторінковий адаптивний сайт-візитка з анімацією при скролі, перемиканням теми та формою зворотного зв’язку. Реалізовано з використанням HTML, CSS (Flexbox, Media Queries) та JavaScript (localStorage, події, DOM).</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="img/project2.jpg" alt="Проєкт 2">
+            <div class="overlay">
+                <h3>Інтернет-магазин техніки</h3>
+                <p>Функціональний прототип магазину з фільтрацією товарів, кошиком, підрахунком вартості та формою оформлення замовлення. Застосовано JavaScript, Bootstrap та базову структуру backend через JSON-файл.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="img/project3.jpg" alt="Проєкт 3">
+            <div class="overlay">
+                <h3>Новинний портал</h3>
+                <p>Багатосторінковий сайт зі стрічкою новин, розділами, пагінацією та розширеним пошуком. Для зручності користувачів реалізовано темну тему, плавну навігацію, модальні вікна та адаптивність.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="img/project4.jpg" alt="Проєкт 4">
+            <div class="overlay">
+                <h3>Система обліку завдань (To-Do App)</h3>
+                <p>Мобільна вебпрограма для створення, редагування та видалення завдань. Збереження в localStorage, підтримка темної теми, інтерфейс з фокусом на UX/UI, створений на чистому JavaScript без бібліотек.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact" class="fade-in">
+    <h2>Контакти</h2>
+    <form id="contactForm">
+        <label>Надіслати повідомлення:</label>
+        <label for="email"></label><input type="email" id="email" name="email" required placeholder="your@email.com"/>
+        <label for="message"></label><textarea id="message" name="message" required
+                                               placeholder="Ваше повідомлення..."></textarea>
+
+        <button type="submit">Надіслати</button>
+        <p id="formConfirmation" style="display:none; color:green; font-weight:bold;">Повідомлення надіслано!</p>
+    </form>
+
+    <ul class="contact-info">
+        <li>Email: ivanenko@example.com</li>
+        <li>GitHub: github.com/ivanenko</li>
+        <li>LinkedIn: linkedin.com/in/ivanenko</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2025 Вебстудія Іваненка Івана</p>
+    <a href="#hero" class="back-to-top">↑ Догори</a>
+</footer>
+
+<script src="js/theme.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/form.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/sidebar.js"></script>
+</body>
+</html>
+
